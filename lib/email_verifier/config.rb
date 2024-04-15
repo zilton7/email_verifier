@@ -7,7 +7,7 @@ module EmailVerifier
       def reset
         @verifier_email = "nobody@nonexistant.com"
         @test_mode = false
-        if defined?(Rails) and defined?(Rails.env) and Rails.env.test?
+        if defined?(Rails) && defined?(Rails.env) && Rails.env.test?
           @test_mode = true
         end
       end
